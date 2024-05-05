@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { Component } from "react";
 import './App.css';
+import AppRoutes from "./Component/AppRoutes";
+import Login from "./Component/Login";
+import EmpList from "./Component/EmpList";
+import Logout from "./Component/Logout";
+import Register from "./Component/Register";
+import UpdateProfile from "./Component/UpdateProfile";
+import Profile from "./Component/Profile";
+import Menu from "./Component/Menu";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+class App extends Component {
+  render() 
+  {
+
+    return (
+      <div >
+
+  <AppRoutes/>
+  {/* <Login/> */}
+{/* <EmpList/> */}
+
     </div>
   );
 }
+}
+
 
 export default App;
